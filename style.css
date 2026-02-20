@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.top-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 40px 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: #e5e7eb;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  gap: 40px;
+}
+
+.preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  width: 600px;
+  height: 600px;
+  background: #1a1aff;
+  border-radius: 10px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 1px #ddd;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.text {
+  width: 100%;
+  font-size: 70px;
+  line-height: 1.05;
+  text-align: justify;
+  text-align-last: justify;
+  word-break: break-word;
+  transition: all 0.2s ease;
+  color: #000000;
+}
+
+.controls {
+  width: 320px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+.controls h4 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.color-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.align-buttons,
+.flip-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.align-buttons button,
+.flip-buttons button,
+.download-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.active-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.download-btn {
+  margin-top: 15px;
+  width: 100%;
+  font-weight: 600;
+}
+
+.slider-label span {
+  font-weight: 600;
+}

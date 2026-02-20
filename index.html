@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Moola Nakshatram</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.cdnfonts.com/css/arial-narrow" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="top-section">
+    <h3>Type meme</h3>
+    <div class="input-wrapper">
+      <input id="textInput" value="Moola Nakshatram — Certified by the Stars for Unlucky Life.">
+      <button class="clear-btn" onclick="clearText()">×</button>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="preview">
+      <div class="canvas" id="canvas">
+        <div class="text" id="textDisplay">
+          Moola Nakshatram — Certified by the Stars for Unlucky Life.
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+
+      <h4>Colors</h4>
+      <div class="color-row">
+        <label>Background</label>
+        <input type="color" id="bgColor" value="#1a1aff">
+      </div>
+      <div class="color-row">
+        <label>Text</label>
+        <input type="color" id="textColor" value="#000000">
+      </div>
+
+      <h4 class="slider-label">Font Size (<span id="fontSizeValue">70</span>px)</h4>
+      <input type="range" id="fontSize" min="20" max="150" value="70">
+
+      <h4 class="slider-label">Line Spacing (<span id="lineHeightValue">1.05</span>)</h4>
+      <input type="range" id="lineHeight" min="0.8" max="2" step="0.05" value="1.05">
+
+      <h4 class="slider-label">Blur (<span id="blurValue">0</span>px)</h4>
+      <input type="range" id="blurSlider" min="0" max="20" value="0">
+
+      <h4 class="slider-label">Rotation (<span id="rotationValue">0</span>°)</h4>
+      <input type="range" id="rotateSlider" min="0" max="180" value="0">
+
+      <h4>Text Alignment</h4>
+      <div class="align-buttons">
+        <button onclick="setAlign(this,'left')">Left</button>
+        <button onclick="setAlign(this,'center')">Center</button>
+        <button onclick="setAlign(this,'right')">Right</button>
+        <button class="active-btn" onclick="setAlign(this,'justify')">Justify</button>
+      </div>
+
+      <h4>Flip</h4>
+      <div class="flip-buttons">
+        <button onclick="flipHorizontal(this)">Horizontal</button>
+        <button onclick="flipVertical(this)">Vertical</button>
+      </div>
+
+      <button class="download-btn" onclick="downloadImage()">Download PNG</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
