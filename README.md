@@ -1,4 +1,4 @@
-# 🌌 Arial Jutisy Text Generator
+# 🌌 Arial Justify Text Generator
 
 Create your own style text on image in seconds.
 
