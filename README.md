@@ -8,7 +8,7 @@ This is a simple web-based text text image generator that allows users to custom
 
 ## 🚀 Live Demo
 
-👉 https://yourusername.github.io/moola-nakshatram-generator/
+👉 https://yogeshjakka.github.io/Arial.justify/
 
 ---
 
