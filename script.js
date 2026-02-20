@@ -19,8 +19,8 @@ let flipHState = false;
 let flipVState = false;
 let rotation = 0;
 
-canvas.style.background = "#1a1aff";
-textDisplay.style.color = "#000000";
+canvas.style.background = "#000000";
+textDisplay.style.color = "#ffffff";
 
 textInput.addEventListener("input", () => {
   textDisplay.textContent = textInput.value;
