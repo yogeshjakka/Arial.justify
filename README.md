@@ -52,6 +52,7 @@ Arial Justify/
 ├── style.css
 ├── script.js
 └── README.md
+└── fonts
 ```
 
 ---
