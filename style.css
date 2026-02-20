@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Arial Narrow Custom';
+  src: url('fonts/ArialNarrow.woff2') format('woff2'),
+       url('fonts/ArialNarrow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Arial Narrow Custom', sans-serif;
   background: #f5f6f8;
   color: #222;
 }
@@ -35,6 +44,7 @@ h3 {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
+  font-family: 'Arial Narrow Custom', sans-serif;
 }
 
 .clear-btn {
@@ -83,6 +93,7 @@ h3 {
   word-break: break-word;
   transition: all 0.2s ease;
   color: #000000;
+  font-family: 'Arial Narrow Custom', sans-serif;
 }
 
 .controls {
@@ -120,6 +131,7 @@ h3 {
   background: #f9fafb;
   cursor: pointer;
   transition: 0.2s;
+  font-family: 'Arial Narrow Custom', sans-serif;
 }
 
 .active-btn {
