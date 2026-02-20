@@ -46,7 +46,7 @@ This is a simple web-based text text image generator that allows users to custom
 ## 📂 Project Structure
 
 ```
-moola-nakshatram-generator/
+Arial Justify/
 │
 ├── index.html
 ├── style.css
