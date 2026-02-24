@@ -44,7 +44,6 @@ h3 {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
-  font-family: 'Arial Narrow Custom', sans-serif;
 }
 
 .clear-btn {
@@ -74,12 +73,11 @@ h3 {
   width: 600px;
   height: 600px;
   background: #000000;
-  border-radius: 10px;
+  border-radius: 0;
   padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 1px #ddd;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -91,9 +89,8 @@ h3 {
   text-align: justify;
   text-align-last: justify;
   word-break: break-word;
-  transition: all 0.2s ease;
   color: #ffffff;
-  font-family: 'Arial Narrow Custom', sans-serif;
+  transition: all 0.2s ease;
 }
 
 .controls {
@@ -101,7 +98,6 @@ h3 {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 0 0 1px #ddd;
 }
 
 .controls h4 {
@@ -112,6 +108,8 @@ h3 {
 .color-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
@@ -122,16 +120,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.align-buttons button,
-.flip-buttons button,
-.download-btn {
+button {
   padding: 6px 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   background: #f9fafb;
   cursor: pointer;
-  transition: 0.2s;
-  font-family: 'Arial Narrow Custom', sans-serif;
 }
 
 .active-btn {
@@ -146,6 +140,20 @@ h3 {
   font-weight: 600;
 }
 
-.slider-label span {
+.creator-footer {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.creator-footer a {
+  text-decoration: none;
   font-weight: 600;
+  color: #3b82f6;
+  transition: 0.2s ease;
+}
+
+.creator-footer a:hover {
+  text-decoration: underline;
 }
