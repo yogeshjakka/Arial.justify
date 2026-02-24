@@ -21,8 +21,10 @@ This is a simple web-based text text image generator that allows users to custom
 ## ✨ Features
 
 - Real-time text editing
+- Background image upload
 - Custom background color
 - Custom text color
+- enable stroke(also can adjust stroke thickness)
 - Adjustable font size
 - Adjustable line spacing
 - Blur effect
