@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Moola Nakshatram</title>
+<title>Arial Narrow Justify</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
@@ -11,74 +11,98 @@
 <body>
 
 <div class="wrapper">
+<div class="top-section">
+<h3>Type meme</h3>
+<div class="input-wrapper">
+<input id="textInput" value="Arial Narrow">
+<button class="clear-btn" onclick="clearText()">×</button>
+</div>
+</div>
 
-  <div class="top-section">
-    <h3>Type meme</h3>
-    <div class="input-wrapper">
-      <input id="textInput" value="Moola Nakshatram — Certified by the Stars for Unlucky Life.">
-      <button class="clear-btn" onclick="clearText()">×</button>
-    </div>
-  </div>
+<div class="main">
+<div class="preview">
+<div class="canvas" id="canvas">
+<div class="text" id="textDisplay">Arial Narrow</div>
+</div>
+</div>
 
-  <div class="main">
+<div class="controls">
 
-    <div class="preview">
-      <div class="canvas" id="canvas">
-        <div class="text" id="textDisplay">
-          Moola Nakshatram — Certified by the Stars for Unlucky Life.
-        </div>
-      </div>
-    </div>
+<h4>Colors</h4>
+<div class="color-row">
+<label>Background</label>
+<input type="color" id="bgColor" value="#000000">
+</div>
 
-    <div class="controls">
+<div class="color-row">
+<label>Text</label>
+<input type="color" id="textColor" value="#ffffff">
+</div>
 
-      <h4>Colors</h4>
-      <div class="color-row">
-        <label>Background</label>
-        <input type="color" id="bgColor" value="#000000">
-      </div>
-      <div class="color-row">
-        <label>Text</label>
-        <input type="color" id="textColor" value="#ffffff">
-      </div>
+<h4>Background Image</h4>
+<div class="color-row">
+<input type="file" id="bgImageUpload" accept="image/*">
+<button type="button" id="removeBgBtn">Remove</button>
+</div>
 
-      <h4 class="slider-label">Font Size (<span id="fontSizeValue">70</span>px)</h4>
-      <input type="range" id="fontSize" min="20" max="150" value="70">
+<h4>Stroke / Outline</h4>
+<label>
+<input type="checkbox" id="strokeToggle"> Enable Stroke
+</label>
 
-      <h4 class="slider-label">Line Spacing (<span id="lineHeightValue">1.05</span>)</h4>
-      <input type="range" id="lineHeight" min="0.8" max="2" step="0.05" value="1.05">
+<div class="color-row">
+<label>Stroke Color</label>
+<input type="color" id="strokeColor" value="#000000">
+</div>
 
-      <h4 class="slider-label">Blur (<span id="blurValue">0</span>px)</h4>
-      <input type="range" id="blurSlider" min="0" max="20" value="0">
+<h4>Stroke Thickness (<span id="strokeSizeValue">2</span>px)</h4>
+<input type="range" id="strokeSize" min="0.5" max="10" value="2" step="0.5">
 
-      <h4 class="slider-label">Rotation (<span id="rotationValue">0</span>°)</h4>
-      <input type="range" id="rotateSlider" min="0" max="180" value="0">
+<h4>Font Size (<span id="fontSizeValue">70</span>px)</h4>
+<input type="range" id="fontSize" min="20" max="150" value="70">
 
-      <h4>Text Alignment</h4>
-      <div class="align-buttons">
-        <button onclick="setAlign(this,'left')">Left</button>
-        <button onclick="setAlign(this,'center')">Center</button>
-        <button onclick="setAlign(this,'right')">Right</button>
-        <button class="active-btn" onclick="setAlign(this,'justify')">Justify</button>
-      </div>
+<h4>Line Spacing (<span id="lineHeightValue">1.05</span>)</h4>
+<input type="range" id="lineHeight" min="0.8" max="2" step="0.05" value="1.05">
 
-      <h4>Flip</h4>
-      <div class="flip-buttons">
-        <button onclick="flipHorizontal(this)">Horizontal</button>
-        <button onclick="flipVertical(this)">Vertical</button>
-      </div>
+<h4>Blur (<span id="blurValue">0</span>px)</h4>
+<input type="range" id="blurSlider" min="0" max="2" value="0" step="0.1">
 
-      <button class="download-btn" onclick="downloadImage()">Download PNG</button>
+<h4>Rotation (<span id="rotationValue">0</span>°)</h4>
+<input type="range" id="rotateSlider" min="0" max="180" value="0">
 
-    </div>
+<h4>Text Alignment</h4>
+<div class="align-buttons">
+<button onclick="setAlign(this,'left')">Left</button>
+<button onclick="setAlign(this,'center')">Center</button>
+<button onclick="setAlign(this,'right')">Right</button>
+<button class="active-btn" onclick="setAlign(this,'justify')">Justify</button>
+</div>
 
-  </div>
+<h4>Flip</h4>
+<div class="flip-buttons">
+<button onclick="flipHorizontal(this)">Horizontal</button>
+<button onclick="flipVertical(this)">Vertical</button>
+</div>
+
+<button class="download-btn" onclick="downloadImage()">Download PNG</button>
 
 </div>
+</div>
+</div>
+
+<footer class="creator-footer">
+  <p>
+    Made with ❤️ by 
+    <a href="https://instagram.com/yogesh_.1924._" 
+       target="_blank" 
+       rel="noopener noreferrer">
+       @yogesh_.1924._
+    </a>
+  </p>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="script.js"></script>
 
 </body>
 </html>
-
